@@ -15,5 +15,5 @@ Bundle_ja.properties と Bundle_ja.properties.utf8 は文字コードが違う�
 ------------------------------------
  Utirities
  
- - gen_properties.py // properties Create Python script
- - gen_properties_md.py // Preview markdown Create Python script
+ - gen_properties.py // properties Generate Python script
+ - gen_properties_md.py // Preview markdown Generate Python script
