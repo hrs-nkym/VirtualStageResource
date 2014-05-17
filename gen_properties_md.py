@@ -28,7 +28,14 @@ def main():
     """Convert java properties (UTF-16) file to markdown
     """
 
-    decode = lambda x: x.encode("latin-1").decode("unicode-escape")
+    if sys.version_info >= (3, 0):
+        decode = lambda x: x.encode("latin-1").decode("unicode-escape")
+    else:
+        import codecs
+        sys.stdin = codecs.getreader('unicode-escape')(sys.stdin)
+        decode = lambda x: x.encode("utf-8")
+
+
 
     for line in fileinput.input():
         line = line.strip()
@@ -39,6 +46,8 @@ def main():
             print()
             print("## {}".format(line.lstrip("#").title()))
             print()
+            print("| Key | Value |")
+            print("|:----|:------|")
         elif "=" in line:
             # NOTE: value may contains Markdown notation.
             # This code doesn't check it now.
