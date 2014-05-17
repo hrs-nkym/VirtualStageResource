@@ -1,8 +1,9 @@
 VirtualStageResource
 ====================
 
-Virtual Stageで使われるリソースファイルです。
- 
+Virtual Stageで使われるリソースファイルです。　
+The resource files used by the Virtual Stage.
+
  http://virtual-stage.appspot.com/
 
  - Bundle.properties // English Version
