@@ -39,6 +39,8 @@ def main():
             print()
             print("## {}".format(line.lstrip("#").title()))
             print()
+            print("| Key | Value |")
+            print("|:----|:------|")
         elif "=" in line:
             # NOTE: value may contains Markdown notation.
             # This code doesn't check it now.
