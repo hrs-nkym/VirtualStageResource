@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Virtual Stage download page">
+        <meta name="author" content="Elieser A. de Jesus">
+        <title>Virtual Stage </title>
+
+        <!-- Added for local template view standalone file -->
+        <base href="http://virtual-stage.appspot.com/">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/vs.css" rel="stylesheet">
+
+    </head>
+    <!-- NAVBAR
+    ================================================== -->
+    <body>
+        <div class="container" style="padding-bottom: 10px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 2px 2px 2px 2px #888888;background-color: #dddddd">
+            <div class="container" style="text-align: center; width: 90%">
+                <img src="logo.png" alt="Virtual Stage logo" />
+                <h1 class="topTitle">Virtual Stage</h1>
+            </div>
+            <div style="padding: 20px;" >
+                <h5 style="color: #cc3300; margin-bottom: 10px; margin-top: -20px; text-align: center;" >
+                    Play online <b><i>for free</i></b> with other musicians!
+                </h5>
+            </div>
+            <img class="vsimage" src="vs_jam.png" />
+
+            <div class="section">
+                <h3>{{ Section.Needs.title }}</h3>
+                <ul>
+                    <li>{{ Section.Needs.text1 }}</li>
+                    <li>{{ Section.Needs.text2 }}</li>
+                    <li>{{ Section.Needs.text3 }}</li>
+                </ul>
+            </div> 
+            <div class="section">
+                <img style="float: right;margin: 10px;" src="network-cable.png" width="200" alt="Network cable image" />
+                <h3 style="color: red;">{{ Section.Important.title }}</h3>
+                {{ Section.Important.text }}
+            </div>
+            <div class="section" style="clear: both;">
+                <h3>{{ Section.Download.title }}</h3>
+                <div class="download">
+                    <img src="Microsoft-icon.png" alt="Microsoft Icon"/> <br/>
+                    <a class="btn btn-default" href="https://dl.dropboxusercontent.com/u/23791949/vs/Instalador%20do%20Virtual%20Stage.exe" role="button">Windows</a>
+                </div>
+                <div class="download">
+                    <img src="Apple-icon.png" alt="Apple icon" /><br/> 
+                    <a disabled class="btn btn-default" role="button">Mac ({{ Section.Download.soon }})</a>
+                </div>
+            </div>
+            <div class="section">
+                <h3>{{ Section.Others.title }}</h3>
+                <ul>
+                    <li><a href="http://seesaawiki.jp/odyssey1/">Wiki </a><img src="jp.png" style="border: 1px solid #262626;" /></li>
+                    <li><a href="https://www.facebook.com/virtualstagebr">Facebook Page </a><img src="br.png" class="flag"/></li>
+                </ul>
+            </div> 
+            <div class="section">
+                <h3>{{ Section.NetworkLatency.title }}</h3>
+                <p>
+                    {{ Section.NetworkLatency.text }}
+                </p>
+            </div>
+            <div class="section">
+                <h3>{{ Section.LocalLatency.title }}</h3>
+                <p>
+                    {{ Section.LocalLatency.text }}
+                </p>
+            </div>
+            <div class="section">
+                <h3>{{ Section.Problems.title }}</h3>
+                {{ Section.Problems.text1 }}
+                <br/>
+                <div class="section" style="background-color: #dddddd; margin-top: 20px; margin-bottom: 5px;">
+                    <h4>{{ Section.Problems.solution }}</h4>
+                    {{ Section.Problems.text2 }}
+                    <br/>
+                    {{ Section.Problems.text3 }}
+                </div>
+            </div>
+            <div class="section">
+                <img style="float: right; margin: 10px; margin-top: 60px;" src="eu.jpg" width="160" alt="Elieser image" />
+                <h3>{{ Section.Contact.title }}</h3>
+                <hr/>
+                <p>{{ Section.Contact.text }}</p>
+                <ul style="line-height: 3pt">
+                    <li>Allow musicians to share an image or a PDF file (lead sheets).</li>
+                    <li>VST and VSTi support.</li>
+                    <li>Integration with NinjaM. <a target="_blank" href="http://www.cockos.com/ninjam/">NinjaM</a> </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>{{ Section.Thanks.title }}</h3>
+                <hr/>
+                <p>
+                    {{ Section.Thanks.text }}
+                <ul style="line-height: 3pt">
+                    <li>Oseias Rodrigues - <i>Official Beta Tester, and my Brother :)</i></li> 
+                    <li>Tiago Zunino  - <i>Marketing :)</i></li>
+                    <li>Alexandre Stoll</li>
+                    <li>Fabrício Bortoluzzi (The Network Consultor :) )</li>
+                    <li>Micael Graciki</li>
+                    <li>Jaderson Cardoso</li>
+                    <li>Giovanni Sagaz</li>
+                    <li>Maicon Pereira</li>
+                    <li>Demmis Kohler</li>
+                    <li>"Chico Preto"</li>
+                    <li>Ricardo Cherubin</li>
+                    <li>Fernando das Neves</li>
+                    <li>Fillipi Pelz</li>
+                    <li>Josimar Cordeiro</li>
+                    <li>Fillipe Martineghi</li>
+                    <li>Andre Luiz Maciel Santana</li>
+                    <li>Alexandre Vicente</li>
+                    <li>Robert Dube (BioXiD) - {{ Section.Donations.text }}
+                        <img src="BioDonation.png" style="border: 1px solid #888888; margin-top: 10px;"/>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div><!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--script src="js/holder.js"></script-->
+    </body>
+</html>
