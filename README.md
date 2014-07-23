@@ -1,10 +1,10 @@
-VirtualStageResource
+JamTabaResource
 ====================
 
-Virtual Stageで使われるリソースファイルです。　
-The resource files used by the Virtual Stage.
+JamTabaで使われるリソースファイルです。　
+The resource files used by the JamTaba.
 
- http://virtual-stage.appspot.com/
+ http://jamtaba.com/
 
 | File | Description |
 |:-----|:------------|
