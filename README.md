@@ -1,4 +1,4 @@
-JamTabaResource
+JamTabaResource　![](http://img.shields.io/github/tag/hrs-nkym/JamTabaResource.svg)
 ====================
 
 JamTabaで使われるリソースファイルです。　
