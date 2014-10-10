@@ -13,7 +13,7 @@ The resource files used by the JamTaba.
  
 ----
 
-### Utirities
+### Utilities
 
 
 | File | Description |
